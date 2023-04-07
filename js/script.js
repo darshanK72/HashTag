@@ -11,3 +11,28 @@ window.onscroll = function(){
         nav.classList.remove("header-scrolled");
     }
 }
+
+
+
+$(document).ready(function(){
+    $(".client-slider-section").owlCarousel({
+        items:6,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:4
+            },
+            1300:{
+                items:6
+            }
+        }
+    });
+})

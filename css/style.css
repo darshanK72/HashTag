@@ -9,7 +9,7 @@
     --bg-black: #090b3c;
     --bg-white: #fff;
     --bg-light-white-1: #fcfcfc;
-    --bg-light-white-2: #f2f7fa;
+    --bg-light-white-2: #c8e8fa;
     --bg-light-green: #0c9d80;
     --bg-feature-1: #fff6d6;
     --bg-feature-2: #ebdcf9;
@@ -206,6 +206,46 @@ a.btn-filled:hover {
 }
 
 
+/*=============================================
+=                 Client Slider               =
+=============================================*/
+
+#clients-wraper{
+    background-color:var(--bg-light-white-2) !important;
+}
+#clients-wraper .container{
+    padding: 80px 0 50px;
+   
+}
+
+
+
+.owl-carousel .owl-wrapper-outer .owl-wrapper
+{
+    width: 100% ;
+}
+
+#clients-wraper .container .row img{
+    width: auto !important;
+    height: 50px;
+    object-fit: cover;
+}
+
+#clients-wraper .container h2{
+    font-size:2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: "Roboto",sans-serif;
+}
+
+.client-slider-section .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
 @media screen and (max-width:1120px) {
 
     #header-wrapper .navbar-brand img {
@@ -238,6 +278,10 @@ a.btn-filled:hover {
     }
     #header-wrapper .navbar-nav .btn{
         margin-bottom: 0.8rem;
+    }
+
+    .banner-wraper .container .row{
+        flex-direction: column-reverse;
     }
     
 }
