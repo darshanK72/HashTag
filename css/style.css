@@ -261,6 +261,115 @@ a.btn-filled:hover {
     }
 }
 
+
+/*=============================================
+=                About Wrapper                =
+=============================================*/
+
+.about-wrapper{
+    padding: 3rem 0rem;
+}
+.about-wrapper .row:nth-child(2){
+    background-color: var(--bg-light-white-2);
+}
+.about-wrapper p:first-child{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--bg-white);
+    background-color: var(--bg-light-green);
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+}
+.about-wrapper button{
+    background-color: var(--bg-black) !important;
+    color: var(--text-white) !important;
+    padding:0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: none !important;
+}
+
+
+/*=============================================
+=                    Projects                 =
+=============================================*/
+
+#projects{
+    padding-top: 3rem;
+    /* padding-bottom: 0; */
+}
+
+#projects h2{
+    font-size: 2rem !important;
+    font-family: "Roboto",sans-serif;
+    color: var(--text-orange);
+    font-weight: 900;
+}
+
+#projects p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+/*=============================================
+=                 Features                 =
+=============================================*/
+
+
+#features{
+    background-color: var(--bg-light-white-2);
+    padding: 3rem 0;
+}
+#features p{
+    font-size: 1.3rem !important;
+    color: var(--text-gray-2);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#features h2{
+    font-size: 2.7rem !important;
+    color: var(--bg-black);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+#features .row:nth-child(2){
+    gap: 20px;
+}
+
+#features .cardt{
+    padding: 2rem;
+    position: relative;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    width: 30% !important;
+}
+
+#features .cardt img{
+    position: absolute;
+    top: -25px;
+}
+#c1{
+    background-color:#fff5d3 ;
+}
+#c2{
+    background-color:#ece0f8 ;
+}
+#c3{
+    background-color:#dcf3fc ;
+}
+#c4{
+    background-color:#d9f3e8 ;
+}
+#c5{
+    background-color:#fae6e2 ;
+}
+#c6{
+    background-color:#f3e0dc ;
+}
 @media screen and (max-width:991px) {
 
     html{
@@ -283,5 +392,19 @@ a.btn-filled:hover {
     .banner-wraper .container .row{
         flex-direction: column-reverse;
     }
+
+    #features .cardt{
+        width: 48% !important;
+    }
     
+}
+
+@media screen and (max-width:540px) {
+    #features .cardt{
+        width: 90% !important;
+    }
+
+    #features .cardt img{
+        top: -25px;
+    }
 }

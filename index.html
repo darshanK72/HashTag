@@ -17,6 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+  <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -46,7 +47,7 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
 
   <!-- 1. Navbar -->
   <header id="header-wrapper">
@@ -63,7 +64,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav menu-navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -95,7 +96,7 @@
   </header>
 
   <!-- 2. Banner -->
-  <section id="banner" class="banner-wraper">
+  <section id="home" class="banner-wraper">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -151,6 +152,109 @@
     </div>
   </section>
 
+  <!-- 4. About -->
+  <section id="about" class="about-wrapper">
+    <div class="container-fluid">
+      <div class="row align-items-center px-5 py-4">
+        <div class="col-sm-12 col-lg-5 text-center text-md-start">
+          <p>1</p>
+          <h2>Showcase your brand beautifully with our service</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ullam recusandae alias libero excepturi!
+            Sit odio adipisci quam dolorum reiciendis repellat, aut vitae porro, culpa, natus illum at ex nihil?</p>
+          <button clas="btn btn-filled">Find Out More</button>
+        </div>
+        <div class="col-sm-12 col-lg-7">
+          <img src="./img/commerce.png" class="img-fluid my-5" alt="">
+        </div>
+      </div>
+      <div class="row align-items-center px-5 py-4">
+        <div class="col-sm-12 col-lg-7">
+          <img src="./img/innovation.png" class="img-fluid my-5" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-5 text-center text-md-start">
+          <p>2</p>
+          <h2>The Best Digital Marketing Company, We Understand Your Needs</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ullam recusandae alias libero excepturi!
+            Sit odio adipisci quam dolorum reiciendis repellat, aut vitae porro, culpa, natus illum at ex nihil?</p>
+          <button clas="btn btn-filled">Find Out More</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 text-center">
+            <h2 class="number">8,500+</h2>
+            <p>Projects Completed</p>
+          </div>
+          <div class=" col-6  col-md-3 text-center">
+            <h2 class="number">9,470+</h2>
+            <p>Happy Clients</p>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <h2 class="number">93%</h2>
+            <p>Repete Customers</p>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <h2 class="number">32+</h2>
+            <p>Awords Won</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Features -->
+  <section id="features" clas="features-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <p>So Much To Offer</p>
+          <h2>Our Main Features</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="cardt col-12 col-md-6 col-lg-4" id="c1">
+          <img src="./img/consultancy.png" alt="">
+          <h3>Consultency</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+        <div class="cardt col-12 col-md-6 col-lg-4"  id="c2">
+          <img src="./img/solutions.png" alt="">
+          <h3>Tech Solution</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+        <div class="cardt col-12 col-md-6 col-lg-4"  id="c3">
+          <img src="./img/simple.png" alt="">
+          <h3>User Dashboard</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+        <div class="cardt col-12 col-md-6 col-lg-4"  id="c4">
+          <img src="./img/deadline.png" alt="">
+          <h3>Deadline Notification</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+        <div class="cardt col-12 col-md-6 col-lg-4"  id="c5">
+          <img src="./img/data.png" alt="">
+          <h3>Data Retrival</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+        <div class="cardt col-12 col-md-6 col-lg-4"  id="c6">
+          <img src="./img/flexible.png" alt="">
+          <h3>Flexible System</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum at aliquid iste quisquam omnis nostrum
+            itaque suscipit quasi iusto saepe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Script -->
   <script src="./js/script.js"></script>
 
@@ -164,7 +268,6 @@
     integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- JQuery -->
 
 </body>
 
