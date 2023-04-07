@@ -15,12 +15,12 @@ window.onscroll = function(){
 
 
 $(document).ready(function(){
-    $(".client-slider-section").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         items:6,
         loop:true,
         margin:10,
         autoplay:true,
-        autoplayTimeout:1000,
+        autoplayTimeout:12220,
         autoplayHoverPause:true,
         responsiveClass:true,
         responsive:{
