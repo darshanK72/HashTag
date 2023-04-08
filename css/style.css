@@ -370,6 +370,111 @@ a.btn-filled:hover {
 #c6{
     background-color:#f3e0dc ;
 }
+
+
+
+/*=============================================
+=                 Pricing Plan                =
+=============================================*/
+
+#pricing{
+    padding: 3rem 0;
+}
+#pricing p{
+    font-size: 1.3rem !important;
+    color: var(--text-gray-2);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#pricing h2{
+    font-size: 2.7rem !important;
+    color: var(--bg-black);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+#pricing-cards{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch !important;
+    gap: 20px;
+
+
+}
+
+#pricing-cards .cardp{
+    background-color: var(--bg-white);
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 15%);
+    padding: 2rem;
+    width: 30%  !important;
+    height: 100%;
+    text-align: center;
+    height: 700px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#pricing-cards .cardp img{
+    height: 300px;
+}
+#pricing-cards .cardp .title{
+    font-size: 2rem !important;
+    font-weight: 800;
+    color: var(--bg-black);
+}
+
+#pricing-cards .cardp .price{
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: var(--text-gray-2);
+    margin-bottom: 0 !important;
+}
+#pricing-cards .cardp .ribbon{
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    width:140px;
+    left: -40px;
+    top: 15px;
+    
+}
+
+#pricing-cards .cardp:nth-child(2){
+    border: 4px solid var(--bg-black);
+}
+
+#pricing-cards .cardp .btn{
+    position: absolute;
+    bottom: 2rem;
+    background-color: var(--bg-light-green);
+    color: var(--text-white);
+    /* width: 40%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#pricing .trial{
+    background-color: var(--bg-light-white-2);
+}
+
+#pricing .trial h3{
+    color: var(--text-orange);
+    font-weight: 800 !important;
+    font-size: 2rem !important;
+}
+
+#pricing .trial button{
+    background-color: var(--text-yellow);
+    color: var(--bg-black) !important;
+}
+
+
 @media screen and (max-width:991px) {
 
     html{
@@ -396,6 +501,10 @@ a.btn-filled:hover {
     #features .cardt{
         width: 48% !important;
     }
+
+    #pricing-cards .cardp{
+        width: 48% !important;
+    }
     
 }
 
@@ -403,6 +512,11 @@ a.btn-filled:hover {
     #features .cardt{
         width: 90% !important;
     }
+
+    #pricing-cards .cardp{
+        width: 90% !important;
+    }
+    
 
     #features .cardt img{
         top: -25px;
