@@ -475,6 +475,103 @@ a.btn-filled:hover {
 }
 
 
+/*=============================================
+=              Testemonials            =
+=============================================*/
+
+#testemonials p{
+    font-size: 1.3rem !important;
+    color: var(--text-gray-2);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#testemonials h2{
+    font-size: 2.7rem !important;
+    color: var(--bg-black);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+#testemonials{
+    margin-bottom: 2rem;
+}
+#testemonials .row{
+    gap: 20px;
+    justify-content: center;
+}
+#testemonials .cardd{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-feature-4);
+    width: 48% !important;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    
+}
+
+#testemonials .cardd h2{
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+}
+
+#testemonials img{
+    width: 180px;
+}
+
+
+
+/*=============================================
+=                Clients                 =
+=============================================*/
+
+
+#clients {
+    background-color: var(--bg-light-white-2);
+    padding: 2rem;
+}
+#clients p{
+    font-size: 1.3rem !important;
+    color: var(--text-gray-2);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#clients h2{
+    font-size: 2.7rem !important;
+    color: var(--bg-black);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+#clients #gal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#clients #gal div{
+    background-color: var(--bg-white);
+    margin: 10px;
+    width: 22% !important;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 /18%);
+    transition: all 0.3s ease;
+}
+
+#clients #gal div:hover{
+    transform: scale(1.1);
+}
+
+#clients #gal div img{
+    width: 80%;
+}
+
 @media screen and (max-width:991px) {
 
     html{
@@ -506,6 +603,19 @@ a.btn-filled:hover {
         width: 48% !important;
     }
     
+    #testemonials .cardd{
+     
+        width: 90% !important;
+        
+    }
+
+    #clients #gal{
+        width: 100%;
+    }
+
+    #clients #gal div{
+        width: 29% !important;
+    }
 }
 
 @media screen and (max-width:540px) {
@@ -516,9 +626,22 @@ a.btn-filled:hover {
     #pricing-cards .cardp{
         width: 90% !important;
     }
+
+    #testemonials .cardd{
+        padding: 2rem !important;
+        flex-direction: column;
+        
+    }
     
+    #clients #gal{
+        width: 100%;
+    }
 
     #features .cardt img{
         top: -25px;
+    }
+
+    #clients #gal div{
+        width: 40% !important;
     }
 }
