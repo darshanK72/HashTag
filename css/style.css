@@ -628,6 +628,76 @@ a.btn-filled:hover {
     color: var(--text-dark-green);
 }
 
+#faq-container .accordion-item .accordion-body{
+    color: var(--text-black);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/*=============================================
+=               Footer Section                =
+=============================================*/
+
+#footer-wrapper{
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    padding-top: 3rem;
+}
+
+#footer-wrapper img{
+    width: 180px;
+}
+#footer-wrapper p{
+    margin-bottom: 0.4rem;
+}
+
+#footer-wrapper .row{
+    padding-bottom: 1rem;
+
+}
+
+
+#footer-wrapper h4{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+
+#footer-wrapper .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#footer-wrapper .row:nth-child(2){
+    border-top: 1px solid var(--text-gray-3);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#footer-wrapper .row:nth-child(2) span{
+    color: var(--text-yellow);
+}
+
+#footer-wrapper .social{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-wrapper .social .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-wrapper .social .icon i{
+    font-size: 1.7rem;
+}
+
+
 
 
 @media screen and (max-width:991px) {
@@ -673,6 +743,15 @@ a.btn-filled:hover {
 
     #clients #gal div{
         width: 29% !important;
+    }
+
+   
+}
+
+@media screen and (max-width:767px) {
+    #footer-wrapper h4{
+        display: flex;
+        justify-content: center;
     }
 }
 
