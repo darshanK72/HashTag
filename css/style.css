@@ -594,6 +594,39 @@ a.btn-filled:hover {
     letter-spacing: -1px;
     font-weight: 800;
 }
+#faqs #faq-container .accordion-item{
+    border: none !important;
+  
+}
+
+#faq-container .accordion-item .accordion-button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    padding: 0 0 15px 0;
+    border-bottom: 0px solid var(--text-gray-3);
+    box-shadow: none !important;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faq-container .accordion-item .accordion-button::after{
+    background-image: url("../img/plus-solid.svg");
+    color: var(--text-dark-green);
+}
+
+
+#faq-container .accordion-item .accordion-button:not(.collapsed):after{
+    background-image: url("../img/minus-solid.svg");
+}
+#faqs .accordion-button:hover,
+#faqs .accordion-button:hover{
+    box-shadow: none;
+    color: var(--text-dark-green);
+}
 
 
 
