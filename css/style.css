@@ -572,6 +572,31 @@ a.btn-filled:hover {
     width: 80%;
 }
 
+
+/*=============================================
+=                  FAQs Section               =
+=============================================*/
+
+#faqs{
+    padding: 2rem;
+}
+
+#faqs p{
+    font-size: 1.3rem !important;
+    color: var(--text-gray-2);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#faqs h2{
+    font-size: 2.7rem !important;
+    color: var(--bg-black);
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+
+
 @media screen and (max-width:991px) {
 
     html{
